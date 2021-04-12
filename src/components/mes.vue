@@ -30,13 +30,13 @@ methods:{
         }
     },
     changeDate(date){
-        var event = new Date(date);
+        const event = new Date(date);
         return  event.toLocaleString()
     }
 },
 async mounted(){
     this.getData();
-    const timerId = setInterval(this.getData, this.interval);
+    var timerId = setInterval(this.getData, this.interval);
 },
 destroyed(){
     clearInterval(timerId)
