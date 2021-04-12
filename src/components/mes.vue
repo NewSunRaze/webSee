@@ -30,7 +30,7 @@ methods:{
         }
     },
     changeDate(date){
-        const event = new Date(date);
+        var event = new Date(date);
         return  event.toLocaleString()
     }
 },
